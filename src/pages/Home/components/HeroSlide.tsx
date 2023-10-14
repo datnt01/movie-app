@@ -1,14 +1,9 @@
 import { memo } from "react";
 import { useNavigate } from "react-router-dom";
-
-import { useGlobalContext } from "../../../context/globalContext";
-
 import { Poster } from "../../../commonComponent";
-
 import { IMovie } from "../../../types";
 
 const HeroSlide = ({ movie }: { movie: IMovie }) => {
-  const { getTrailerId, toggleModal } = useGlobalContext();
   const navigate = useNavigate();
 
   const {
@@ -17,11 +12,6 @@ const HeroSlide = ({ movie }: { movie: IMovie }) => {
     poster_path: posterPath,
     id,
   } = movie;
-
-  const showTrailer = () => {
-    getTrailerId(id);
-    toggleModal();
-  };
 
   const handleWatchNow = () => {
     navigate(`/movie/${id}`);

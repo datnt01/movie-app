@@ -10,7 +10,7 @@ import './styles.scss'
 const Catalog = () => {
   const [page, setPage] = useState(1);
   const [shows, setShows] = useState<any[]>([]);
-  const [query, setQuery] = useSearchParams();
+  const [query] = useSearchParams();
 
   const type = query.get("type") || "popular";
   const searchQuery = query.get("search") || "";

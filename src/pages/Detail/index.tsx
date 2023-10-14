@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 
-import { Poster, Loader, Error, Section } from "../../commonComponent";
-import { Casts, Videos, Genre } from "./components";
+import { Poster, Loader, Error } from "../../commonComponent";
+import { Casts, Genre } from "./components";
 
 import { useGetMovieInfoQuery } from "../../services/TMDB";
 import "./styles.scss";

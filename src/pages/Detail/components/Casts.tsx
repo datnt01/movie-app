@@ -1,4 +1,4 @@
-import { memo, FC, useMemo } from "react";
+import { FC, useMemo } from "react";
 
 import { Error, Image } from "../../../commonComponent";
 import { useGetMovieInfoQuery } from "../../../services/TMDB";
