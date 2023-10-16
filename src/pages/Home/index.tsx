@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <>
       <Hero movies={popularMovies} />
-      <div className='container'>
+      <div className='home-container'>
         {Object.keys(sections).map((sectionKey, index) => (
           <Section sectionKey={sectionKey as TSectionKey} key={index} />
         ))}
