@@ -1,0 +1,56 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 4px 10px 0px 10px;
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        &__logo{
+            background: var(--gold-crayola);
+            border-radius: 10px;
+            height: 30px;
+            width: 48px;
+            cursor: pointer;
+        }
+    }
+    &__searchbox {
+        border: 1px solid white;
+        border-radius: 8px;
+        position: relative;
+        margin-right: 1rem;
+        &__btn{
+            background-color: unset;
+            position: absolute;
+            top: 25%;
+            right: 1.5rem;
+            color: var(--quick-silve);
+            font-size: medium;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        input {
+            height: 40px;
+            width: 300px;
+            background: var(--eerie-black-2);
+            border: none;
+            padding: 8px;
+            border-radius: 8px;
+            color: var(--white);
+            outline: none;
+            &:focus,
+            &:hover {
+                border: 2px solid var(--green-1);
+                cursor: text;
+            }
+        }
+    }
+}
+.header-bg{
+    background-color: var(--eerie-black-2);
+}

@@ -1,0 +1,21 @@
+.card-container {
+    border-radius: var(--radius-24);
+    position: relative;
+    width: 170px;
+    overflow: hidden;
+
+    &__img {
+        object-fit: cover;
+        border-radius: var(--radius-24);
+        box-shadow: var(--shadow-1);
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            transform: scale(1.02);
+        }
+    }
+    &__title{
+        text-align: center;
+        cursor: default;
+
+    }
+}
