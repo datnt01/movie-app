@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import {
+  Error,
   Header,
   // ScrollToTop,
   Loader,
@@ -22,7 +23,8 @@ const App = () => {
       {/* <div>
         <Cursor />
       </div> */}
-      <Header />
+      <Error error="abc"/>
+      {/* <Header /> */}
       <main className="main">
         {/* <ScrollToTop> */}
           <Suspense fallback={<Loader />}>

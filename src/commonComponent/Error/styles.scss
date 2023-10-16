@@ -1,0 +1,23 @@
+.error-wrapper{
+    // relative dark:bg-black bg-mainColor top-0 left-0 w-screen
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    height: 100vh;
+    flex-direction: column;
+}
+.text-error{
+    font-size: larger;
+    text-align: center;
+    font-weight: 700;
+    max-width: 300px;
+    overflow-wrap: break-word;
+}
+.icon-error{
+    font-size: xx-large;
+}
